@@ -22,7 +22,7 @@
                     <nav class="top-menu">
                         <ul class="top-menu__list">
                             <li class="top-menu__item"><a href="#about">О ресторане</a></li>
-                            <li class="top-menu__item"><a href="#tema">Команда</a></li>
+                            <li class="top-menu__item"><a href="#team">Команда</a></li>
                             <li class="top-menu__item"><a href="#order">Заказать</a></li>
                             <li class="logo"><img src="img/logo.png" alt=""></li>
                             <li class="top-menu__item"><a href="#menu">Меню</a></li>
@@ -108,6 +108,47 @@
                 </p>
             </div>
         </div>
+        </section>
+        <section class="order" id="order">
+            <div class="container order__container">
+                <div class="order__text">
+                    <h2>ЗАКАЗАТЬ СТОЛИК</h2>
+                    <form action="" class="order-form">
+                        <input type="text" placeholder="Имя" required>
+                        <input type="text" placeholder="Email" required>
+                        <input type="text" placeholder="Телефон" required>
+                        <div class="order__select">
+                            <select required>
+                                <option value="">Кол-во людей</option>
+                                <option value="1">1</option>
+                                <option value="2-5">2-5</option>
+                                <option value="5-10">5-10</option>
+                                <option value="10-40">10-40</option>
+                                <option value="40-100">40-100</option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="Дата (дата/месяц)" required>
+                        <div class="order__select">
+                            <select required>
+                                <option value="">Время</option>
+                                <option value="10:00 - 14:00">10:00 - 14:00</option>
+                                <option value="14:00 - 18:00">14:00 - 18:00</option>
+                                <option value="18:00 - 23:00">18:00 - 23:00</option>
+                            </select>
+                        </div>
+                        <button type="submit">Оформить заказ</button>
+                    </form>
+                </div>
+                <div class="order__img">
+                    <img src="img/order-img.png" alt="">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="order__contacts">
+                    Пн - Пт: <strong>8 - 22</strong>, Сб - Вс: <strong>9 - 23</strong>, Телефон: <a href="tel:+38098 729 13 67">+38098 729 13 67</a> / <a href="tel:+38097 458 78 79">+38097 458 78 79</a>
+                </div>
+            </div>
         </section>
 
     </div> <!--End wrapper-->

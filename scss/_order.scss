@@ -1,0 +1,104 @@
+.order {
+    padding: 100px 0 45px;
+}
+.order__container {
+    @include flex(space-between, center);
+}
+.order__text {
+    max-width: 565px;
+    width: 50%;
+    text-align: center;
+}
+.order-form {
+    @include flex(space-between, center);
+    input {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background: $grey;
+        border: 1px solid transparent;
+        outline: none;
+        height: 60px;
+        padding: 0 20px;
+        font-size: 14px;
+        &::placeholder {
+            color: $grey-opacity;
+        }
+        &:focus {
+            border: 1px solid $yellow;
+        }
+    }
+    .order__select {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+        position: relative;
+        &::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url(../img/select-arrow.svg) center no-repeat;
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 10px);
+            pointer-events: none;
+        }
+        select {
+            width: 100%;
+            background: $grey;
+            border: 1px solid transparent;
+            height: 60px;
+            padding: 0 20px;
+            font-size: 14px;
+            outline: none;
+            border-radius: 5px;
+            appearance: none;
+            &:not(:valid) {
+                color: $grey-opacity;
+            }
+        }
+        option {
+            color: $black;
+        }
+    }
+    button {
+        width: 100%;
+        background: $yellow;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12px;
+        color: $white;
+        height: 60px;
+        text-transform: uppercase;
+        transition: 0.3s;
+        &:hover {
+            background: darken($yellow, 10%);
+        }
+    }
+}
+.order__img {
+    width: 50%;
+    min-width: 500px;
+    position: relative;
+    .circle {
+        right: 0;
+        transform: translate(40%,-50%);
+    }
+    img {
+        @include img;
+    }
+}
+.order__contacts {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: $grey-opacity;
+    text-align: center;
+    padding-top: 45px;
+    a {
+        color: $grey-opacity;
+        font-weight: 700;
+    }
+}
