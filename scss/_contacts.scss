@@ -1,0 +1,99 @@
+.contacts {
+    padding: 50px 0 90px;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__intro {
+        text-align: center;
+        min-width: 520px;
+        margin: $mc;
+        margin-bottom: 40px;
+    }
+}
+.contacts__form {
+    @include flex(center, center);
+    input, 
+    textarea {
+        width: calc(33.333% - 16px);
+        margin: 0 8px 16px;
+        height: 60px;
+        background: $grey;
+        border-radius: 5px;
+        border: none;
+        padding: 0 20px;
+        font-size: 14px;
+        outline: none;
+        color: $black;
+        border: 1px solid transparent;
+        &::placeholder {
+            color: $grey-opacity;
+        }
+        &:focus {
+            border: 1px solid $yellow;
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 120px;
+        padding: 20px;
+        resize: none;
+    }
+}
+.contacts__data-submit {
+    @include flex(space-between, center);
+    width: 100%;
+    padding: 0 8px;
+    button {
+        width: 50%;
+        min-width: 580px;
+        background: $yellow;
+        text-transform: uppercase;
+        height: 60px;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover {
+            background: darken($yellow, 10%);
+        }
+    }
+}
+.contacts__data-item {
+    @include flex(flex-start, center);
+    font-weight: 700;
+    font-size: 12px;
+    color: $grey-opacity;
+    line-height: 12px;
+    margin-right: 20px;
+    a {
+        color: $grey-opacity;
+    }
+    svg {
+        width: 14px;
+        height: 16px;
+        margin-right: 5px;
+    }
+}
+.contacts__data {
+    @include flex(flex-start, center);
+}
+.map {
+    width: 100%;
+    height: 475px;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+footer {
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    color: $white-opacity;
+    font-size: 12px;
+}
